@@ -10,11 +10,13 @@ public class Principal {
 //        Permite guardar en una posicion diferente
         char array[] = mensaje.toCharArray();
 
-//        creo un arreglo para contear
+//        creo un ciclo for con una variable que conte desde 0 hasta 
         for (int i = 0; i < array.length; i++) {
+
+//            el arreglo sera igual al mismo para no perder el valor original 
             array[i] = (char) ((char) array[i] + (char) 5);
         }
-
+//creamos una variable encriptado valueOf transforma en String para poder leer lo que imprimos
         String encriptado = String.valueOf(array);
 
         System.out.println(encriptado);
